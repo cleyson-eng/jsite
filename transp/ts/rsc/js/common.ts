@@ -14,15 +14,18 @@ let menu = {
 		switch (menu.state) {
 		case MenuState.DESKTOP:
 			menu.menu.style='display:block';
+			menu.menu.className='head-menu'; 
 			menu.button.style='display:none';
 			break;
 		case MenuState.MOBILE_CLOSED:
 			menu.menu.style='display:none';
+			menu.menu.className='head-menu'; 
 			menu.button.className='hmb';
 			menu.button.style='display:block';
 			break;
 		case MenuState.MOBILE_OPEN:
-			menu.menu.style='display:block;width:100%';
+			menu.menu.style='display:block;';
+			menu.menu.className='head-menu short'; 
 			menu.button.className='hmb close';
 			menu.button.style='display:block';
 			break;
