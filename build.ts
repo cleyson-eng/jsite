@@ -31,10 +31,10 @@ function copy(dst:string, src:string) {
 		copy(path.resolve(dst, n), path.resolve(src, n));
 	});
 }
-copy(path.resolve('./build'), path.resolve('./static'));
-copy(path.resolve('./build'), path.resolve('./tout'));
+copy(path.resolve('./docs'), path.resolve('./static'));
+copy(path.resolve('./docs'), path.resolve('./tout'));
 
 const app = express();
 
-app.use("/", express.static(path.resolve('./build')));
+app.use("/", express.static(path.resolve('./docs')));
 app.listen(8080);
