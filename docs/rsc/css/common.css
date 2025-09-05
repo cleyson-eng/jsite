@@ -116,16 +116,14 @@ header a.link:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 400px) {
-  header a.link {
-    margin: 0 0.5em;
-  }
+.head-menu.short {
+  width: 100%;
+  overflow-x: auto;
 }
-@media (max-width: 300px) {
-  header a.link {
-    margin: 0 0.3em;
-  }
+.head-menu.short a.link {
+  margin: 0 0.3em;
 }
+
 * {
   box-sizing: border-box;
 }
